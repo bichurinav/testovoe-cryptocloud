@@ -143,11 +143,145 @@
             </div>
         </section>
         <!-- ./widget -->
-        <!-- table -->
-        <section class="table">
-
+        <!-- shop -->
+        <section class="mt-4 shop">
+            <div class="container-md">
+                <table class="table align-middle d-none d-md-table">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="currency-number">#</th>
+                        <th scope="col" class="currency-title">Валюта</th>
+                        <th scope="col" class="currency-price">Цена</th>
+                        <th scope="col">24 часа</th>
+                        <th scope="col">1 год</th>
+                        <th scope="col" class="currency-buy">Купить</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td class="currency-name"><img class="shop__icon" src="./images/BTC.svg" alt="">Bitcoin</td>
+                        <td>$ 16 491,70</td>
+                        <td class="positive">+1,12%</td>
+                        <td class="positive">+1,12%</td>
+                        <td><button class="btn btn-outline-primary rounded-pill px-4 text-right">купить</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td class="currency-name"><img class="shop__icon" src="./images/LTC.svg" alt="">Litecoin</td>
+                        <td>$ 66,29</td>
+                        <td class="negative">+0,03%</td>
+                        <td class="positive">+3,01%</td>
+                        <td><button class="btn btn-outline-primary rounded-pill px-4">купить</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td class="currency-name"><img class="shop__icon" src="./images/ETH.svg" alt="">Ethereum</td>
+                        <td>$ 1 188,94</td>
+                        <td class="negative">-0,15%</td>
+                        <td class="positive">+3,01%</td>
+                        <td><button class="btn btn-outline-primary rounded-pill px-4">купить</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td class="currency-name"><img class="shop__icon" src="./images/Tether.svg" alt="">Tether (TRC-20)</td>
+                        <td>$ 1,01</td>
+                        <td class="negative">+3,01%</td>
+                        <td class="negative">-0,15%</td>
+                        <td><button class="btn btn-outline-primary rounded-pill px-4">купить</button></td>
+                      </tr>
+                    </tbody>
+                </table>
+                <!-- mobile-table -->
+                <table class="table align-middle d-md-none">
+                    <thead>
+                      <tr>
+                        <th scope="col" class="currency-number align-top">#</th>
+                        <th scope="col" class="currency-title align-top">Валюта</th>
+                        <th scope="col" class="currency-price">
+                            Цена
+                            <div class="d-flex">
+                                <div class="currency-time me-2">24 ч.</div>
+                                <div class="currency-time">1 г.</div>
+                            </div>
+                        </th>
+                        <th scope="col" class="currency-buy align-top">Купить</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img class="shop__icon" src="./images/BTC.svg" alt="">
+                                <div class="currency-name">Bitcoin</div>
+                            </div>
+                        </td>
+                        <td class="price">
+                            $ 16 491,70
+                            <div class="d-flex">
+                                <div class="positive me-2">+1,12%</div>
+                                <div class="positive">+1,12%</div>
+                            </div>
+                        </td>
+                        <td><button class="btn btn-outline-primary rounded-pill px-3 text-right">купить</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img class="shop__icon" src="./images/LTC.svg" alt="">
+                                <div class="currency-name">Litecoin</div>
+                            </div>
+                        </td>
+                        <td class="price">
+                            $ 66,29
+                            <div class="d-flex">
+                                <div class="positive me-2">+0,03%</div>
+                                <div class="positive">+3,01%</div>
+                            </div>
+                        </td>
+                        <td><button class="btn btn-outline-primary rounded-pill px-3">купить</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img class="shop__icon" src="./images/ETH.svg" alt="">
+                                <div class="currency-name">Ethereum</div>
+                            </div>
+                        </td>
+                        <td class="price">
+                            $ 1 188,94
+                            <div class="d-flex">
+                                <div class="negative me-2">-0,15%</div>
+                                <div class="positive">+3,01%</div>
+                            </div>
+                        </td>
+                        <td><button class="btn btn-outline-primary rounded-pill px-3">купить</button></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img class="shop__icon" src="./images/Tether.svg" alt="">
+                                <div class="currency-name">Tether (TRC-20)</div>
+                            </div>
+                        </td>
+                        <td class="price">
+                            $ 1,01
+                            <div class="d-flex">
+                                <div class="positive me-2">+3,01%</div>
+                                <div class="negative">-0,15%</div>
+                            </div>
+                        </td>
+                        <td><button class="btn btn-outline-primary rounded-pill px-3">купить</button></td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
-        <!-- ./table -->
+        <!-- ./shop -->
     </main>
     <script src="./main.js"></script>
   </body>

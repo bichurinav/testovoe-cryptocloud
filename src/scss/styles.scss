@@ -24,6 +24,10 @@ body {
     }
 }
 
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #F0F0F0;
+}
+
 a {
     color: $primary;
     transition: opacity .2s;
@@ -53,6 +57,15 @@ h1, h2, h3 {
     }
 }
 
+.btn-outline-primary {
+    color: $primary;
+    border: 1px solid $primary !important;
+    &:hover, &:active, &:focus {
+        background-color: $primary !important;
+        color: #fff;
+    }
+}
+
 .btn-primary {
     background-color: $primary;
     border-color: $primary;
@@ -65,4 +78,4 @@ h1, h2, h3 {
 @import './header';
 // main
 @import './widget';
-@import './table';
+@import './shop';

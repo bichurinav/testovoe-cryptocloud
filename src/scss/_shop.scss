@@ -1,0 +1,118 @@
+.shop {
+    .table {
+        background: #fff;
+        border-collapse: separate;
+        border: solid 1px #F0F0F0;
+        border-radius: 24px;
+        font-size: 18px;
+        .table>:not(:last-child)>:last-child>* {
+            border-bottom-color: none !important;
+        }
+        th {
+            color: #B4B4B4;
+            font-weight: 400;
+            & {
+                text-align: right;
+            }
+        }
+        .currency-title {
+            text-align: left;
+        }
+        .positive {
+            color: #39CA48;
+        }
+        .negative {
+            color: #FA6666;
+        }
+        td {
+            text-align: right;
+        }
+        .currency-name {
+            text-align: left;
+        }
+        .currency-price {
+            width: 115px;
+        }
+        .currency-buy {
+            width: 155px;
+            padding-right: 16px;
+        }
+        .currency-number {
+            width: 45px;
+        }
+        .currency-time {
+            font-size: 12px;
+        }
+        @media (max-width: 768px) {
+            th {
+                font-size: 16px;
+                text-align: left;
+            }
+            .price, .currency-name {
+                font-size: 16px;
+            }
+            td {
+                text-align: left;
+            }
+            .currency-title {
+                width: 200px;
+            }
+            .currency-price {
+                width: 200px;
+            }
+            .shop__icon {
+                width: 24px;
+                height: 24px;
+            }
+            .currency-number {
+                width: 15px;
+                position: relative;
+                left: 15px;
+            }
+            th[scope="row"] {
+                position: relative;
+                left: 15px;
+            }
+            .currency-buy {
+                width: 50px;
+            }
+        }
+        @media (max-width: 575px) {
+            .currency-price {
+                width: 34%;
+            }
+            th[scope="row"] {
+                font-size: 18px;
+                color: #3C3C3C;
+            }
+            .shop__icon {
+                margin-right: 10px;
+            }
+            .currency-title {
+                width: 90px;
+            }
+        }
+        @media (max-width: 400px) {
+            td.price, .currency-name {
+                font-size: 12px;
+            }
+            .btn {
+                font-size: 12px;
+            }
+            th[scope="row"] {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 330px) {
+            .btn {
+                position: relative;
+                right: 12px;
+            }
+        }
+    }
+    &__icon {
+        width: 48px;
+        height: 48px;
+        margin-right: 16px;
+    }
+}
