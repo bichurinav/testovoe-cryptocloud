@@ -1,3 +1,68 @@
-h1 {
-    color: red;
+@import './fonts.scss';
+
+$primary: #4A40C6;
+
+body, html {
+    overflow-x: hidden;
 }
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    color: #23262F;
+}
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        padding: 0;
+    }
+}
+
+a {
+    color: $primary;
+    transition: opacity .2s;
+    &:hover {
+        color: $primary;
+        opacity: .7;
+    }
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+.text-primary {
+    color: $primary !important;
+}
+
+.main {
+    margin-top: 56px;
+}
+
+.btn-outline-light {
+    color: #3C3C3C;
+    border: 1px solid #ced4da !important;
+    &:hover, &:active, &:focus {
+        background-color: #fff !important;
+    }
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    &:hover, &:focus, &:active {
+        background-color:  $primary;
+        border-color:  $primary;
+    }
+}
+
+@import './header';
+// main
+@import './widget';
+@import './table';

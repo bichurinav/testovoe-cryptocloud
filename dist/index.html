@@ -8,10 +8,147 @@
     <title>CryptoCloud</title>
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Webpack!</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div>
+    <!-- header -->
+    <header class="header d-flex">
+        <div class="container">
+            <div class="header__inner d-flex justify-content-center align-items-center">
+                <a href="#" class="logotype">
+                    <img class="logotype__image" src="./images/logo.svg" alt="logotype">
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- ./header -->
+    <main class="main">
+        <!-- widget -->
+        <section class="widget">
+            <div class="container-md">
+                <div class="widget__inner">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-sm-12 widget-info">
+                            <h2 class="widget-info__title">
+                                Покупка криптовалюты <br /><span class="text-primary">с банковской карты</span>
+                            </h2>
+                            <p class="mt-4 widget-info__description">
+                                Для покупки криптовалюты некоторые провайдеры могут попросить заполнить форму и пройти процедуру 
+                                <a href="#">KYС</a>.
+                            </p>
+                            <img class="d-none d-xl-block widget-info__image" src="./images/back.png" alt="wallets">
+                        </div>
+                        <form action="#" class="col-md-6 col-sm-12 widget-form">
+                            <h2 class="widget-form__title">
+                                Введите сумму покупки<br /> и выберите валюты
+                            </h2>
+                            <!-- stages -->
+                            <div class="stages mt-4">
+                                <div class="row">
+                                    <div class="col stages-item d-flex flex-column align-items-center active">
+                                        <div class="mx-auto stages-item__circle"></div>
+                                        <div class="mt-2 stages-item__desc">Выбор валюты</div>
+                                    </div>
+                                    <div class="col stages-item d-flex flex-column align-items-center">
+                                        <div class="mx-auto stages-item__circle"></div>
+                                        <span class="stages-item__line"></span>
+                                        <div class="mt-2 stages-item__desc">Выбор оператора</div>
+                                    </div>
+                                    <div class="col stages-item d-flex flex-column align-items-center">
+                                        <div class="mx-auto stages-item__circle"></div>
+                                        <span class="stages-item__line"></span>
+                                        <div class="mt-2 stages-item__desc">Ввод реквизитов</div>
+                                    </div>
+                                    <div class="col stages-item d-flex flex-column align-items-center">
+                                        <div class="mx-auto stages-item__circle"></div>
+                                        <span class="stages-item__line"></span>
+                                        <div class="mt-2 stages-item__desc">Оплата покупки</div>
+                                    </div>
+                                    <div class="col stages-item d-flex flex-column align-items-center">
+                                        <div class="mx-auto stages-item__circle"></div>
+                                        <span class="stages-item__line"></span>
+                                        <div class="mt-2 stages-item__desc">Отправка валюты</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./stages -->
+                            <!-- field -->
+                            <div class="mt-6 widget-form__field">
+                                <label for="title-input" class="form-label">Вы отдаете</label>
+                                <div class="input-group">
+                                    <input id="title-input" type="text" class="form-control" placeholder="~180 USD" aria-label="Text input with dropdown button">
+                                    <button class="btn btn-outline-light dropdown-toggle dropdown-currency-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="currency">USD</span> 
+                                        <img class="currency-icon" src="./images/USD-icon.svg" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end" value="USD" name="currency">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="currency">RUB</span><img class="currency-icon" src="./images/RUB-icon.svg" alt="RUB-icon">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="currency">UAH</span><img class="currency-icon" src="./images/UAH-icon.svg" alt="UAH-icon">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="currency">EUR</span><img class="currency-icon" src="./images/EUR-icon.svg" alt="EUR-icon">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <span class="input-info">1 USD = ~0.000059 BTC</span>
+                                </div>
+                            </div>
+                            <!-- ./field -->
+                            <!-- field -->
+                            <div class="mt-6 widget-form__field">
+                                <label for="title-input" class="form-label">Вы получаете</label>
+                                <div class="input-group">
+                                    <input id="title-input" type="text" class="form-control" placeholder="0.010665 BTC" aria-label="Text input with dropdown button">
+                                    <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="currency">BTC</span> 
+                                        <img class="currency-icon" src="./images/BTC-icon.svg" alt="BTC-icon">
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end" value="BTC" name="virtual-currency">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="currency">ETH</span><img class="currency-icon" src="./images/BTC-icon.svg" alt="BTC-icon">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="currency">USDT</span><img class="currency-icon" src="./images/BTC-icon.svg" alt="BTC-icon">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="currency">MATIC</span><img class="currency-icon" src="./images/BTC-icon.svg" alt="BTC-icon">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <span class="input-info">1 BTC = ~16 877 USD</span>
+                                </div>
+                            </div>
+                            <!-- ./field -->
+                            <button type="submit" class="btn btn-primary mt-4 widget-form__btn">Продолжить</button>
+                            <div class="pays d-flex justify-content-center mt-4">
+                                <a href="#" class="mx-2"><img src="./images/MasterCard-icon.svg" alt=""></a>
+                                <a href="#" class="mx-2"><img src="./images/VISA-icon.svg" alt=""></a>
+                                <a href="#" class="mx-2"><img src="./images/APPLE-icon.svg" alt=""></a>
+                                <a href="#" class="mx-2"><img src="./images/GooglePay-icon.svg" alt=""></a>
+                                <a href="#" class="mx-2"><img src="./images/SEPA-icon.svg" alt=""></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./widget -->
+        <!-- table -->
+        <section class="table">
+
+        </section>
+        <!-- ./table -->
+    </main>
     <script src="./main.js"></script>
   </body>
 </html>
